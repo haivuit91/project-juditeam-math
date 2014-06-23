@@ -1,0 +1,140 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 20, 2014, 8:58:33 PM
+    Author     : Tuanka
+*/
+.marker{
+    background: yellow;
+    margin-left: -3px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#view-wapper{
+    width: 100%;
+    height: auto;
+    padding-bottom: 200px;
+}
+#view-wapper #content{
+    font-size: 16px;
+    width: 880px;
+
+}
+#view-wapper #title{
+    padding: 15px 5px;
+    font-weight: bold;
+    width: 100%;
+    font-size: 24px;
+}
+#view-wapper #wrapp-post{
+    background: #E0DFE3;
+    padding: 8px 8px 8px 8px;
+    border-radius: 6px;
+}
+#view-wapper #wrapp-post div{
+    max-width: 100%;
+    border-radius: 4px;
+    padding: 4px;
+    background: white;
+}
+#view-wapper #attach{
+    font-weight: bold;
+    max-width: 100%;
+    border-radius: 4px;
+    padding: 2px;
+}
+#view-wapper #action{
+    margin-top: 5px;
+    background: white;
+    border-radius: 4px;
+    padding: 5px 0 2px 5px;
+}
+#view-wapper #action label{
+    font-size: 16px;
+    font-weight: normal;
+}
+#view-wapper #wrapp-commet{
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+#view-wapper #wrapp-commet label.content{
+    font-weight: normal;
+    padding: 8px 20px;
+    border-radius: 4px;
+    background: #E0DFE3;
+    margin-left:  20px;
+}
+#view-wapper #dediter{
+    margin-top: 10px;
+}
+#view-wapper #dediter button{
+    color: black;
+    font-weight: bold;
+    padding: 5px 20px;
+    background: white;
+    border-radius: 3px;
+    border: 1px #2aabd2 solid;
+}
+#view-wapper #dediter button:hover{
+    background: #2aabd2;
+}
+#view-wapper #dediter textArea{
+    padding: 5px;
+    border-radius: 4px;
+}
+#view-wapper #slide-bar{
+    margin-top: -30px;
+    float: right;
+    margin: 0;
+    width: 200px;
+    background: #080808;
+}
+/*list post*/
+#list-post-wapper{
+    margin-top: 10px;
+}
+#list-post-wapper table tr.title{
+    text-align: center;
+    font-weight:  bold;
+    font-size: 16px;
+    background: #2aabd2;
+}
+
+#list-post-wapper table td.title {
+    width: 800px;
+    padding: 5px 0;
+}
+
+#list-post-wapper table td.date {
+    width: 220px;
+}
+#list-post-wapper table td.category {
+    width: 220px;
+}
+#list-post-wapper table td.action {
+    width: 120px;
+}
+#list-post-wapper table tr.mrow{
+    font-size: 14px;
+}
+#list-post-wapper table tr.mrow td{
+    padding-left: 10px;
+}
+#list-post-wapper table tr.mrow td.action {
+    text-align: center;
+}
+#list-post-wapper table tr.mrow a{
+    padding: 5px;
+}
+.line{
+     border-bottom: 1px #E0DFE3 solid;
+}
+/*end list post*/
