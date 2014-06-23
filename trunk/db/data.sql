@@ -177,7 +177,7 @@ CREATE TABLE `tbl_resource` (
   PRIMARY KEY (`resourceID`),
   KEY `fdf_idx` (`catID`),
   CONSTRAINT `fdf` FOREIGN KEY (`catID`) REFERENCES `tbl_cat_resource` (`catID`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -186,7 +186,7 @@ CREATE TABLE `tbl_resource` (
 
 LOCK TABLES `tbl_resource` WRITE;
 /*!40000 ALTER TABLE `tbl_resource` DISABLE KEYS */;
-INSERT INTO `tbl_resource` VALUES (1,'Bai tap Hinh khong gian','file/resource/0Ski8NZ1.doc',1),(2,'Bai tap hinh toa do phang va pt mu','file/resource/0Ski8NZ2.doc',1),(3,'Bai tap Hinh toa do khong gian va to hop','file/resource/0Ski8NZ3.doc',1),(4,'Bai tap tu on Ham so va phuong trinh luong giac.doc','file/resource/0Ski8NZ4.doc',NULL);
+INSERT INTO `tbl_resource` VALUES (1,'Bai tap Hinh khong gian','file/resource/0Ski8NZ1.doc',1),(2,'Bai tap hinh toa do phang va pt mu','file/resource/0Ski8NZ2.doc',1),(3,'Bai tap Hinh toa do khong gian va to hop','file/resource/0Ski8NZ3.doc',1),(4,'Bai tap tu on Ham so va phuong trinh luong giac.doc','file/resource/0Ski8NZ4.doc',1),(5,'Các lý thuyết cơ bản về tích phân','file/resource/0Ski8NZ4.doc',2),(6,'Lý thuyết ngyên hàm tích phân','file/resource/0Ski8NZ4.doc',2),(7,'Lý thuyết tích phân từng phần','file/resource/0Ski8NZ4.doc',2),(8,'Tài liệu tham khảo chuyên đề nguyên hàm tích phân','file/resource/0Ski8NZ4.doc',3),(9,'Tổng hợp nhiều tài liệu tích phân hay','file/resource/0Ski8NZ4.doc',3),(10,'Hướng dẫn giải bài tập tích phân với nhiều cách khác nhau','file/resource/0Ski8NZ4.doc',4),(11,'Các phương pháp giải tích phân','file/resource/0Ski8NZ4.doc',4),(12,'Một số kinh nghiệm cách giải tích phân','file/resource/0Ski8NZ4.doc',5),(13,'Kinh nghiệm giải các bài tập tích phân','file/resource/0Ski8NZ4.doc',5);
 /*!40000 ALTER TABLE `tbl_resource` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -258,4 +258,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-06-23 15:51:12
+-- Dump completed on 2014-06-23 16:32:41
