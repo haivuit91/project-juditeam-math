@@ -12,6 +12,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import model.dao.ResourceDAO;
+import model.dao.service.ResourceDAOService;
 import util.Constants;
 
 /**
@@ -70,6 +72,12 @@ public class ResourceServlet extends HttpServlet {
     }
     private void load(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         request.setAttribute(Constants.PAGE, "resource");
+        ResourceDAOService resourceService = ResourceDAO.getInstace();
+        request.setAttribute("list_bt",  resourceService.getResoureByCatID(1));
+        request.setAttribute("list_lt",  resourceService.getResoureByCatID(2));
+        request.setAttribute("list_tl",  resourceService.getResoureByCatID(3));
+        request.setAttribute("list_hd",  resourceService.getResoureByCatID(4));
+        request.setAttribute("list_kn",  resourceService.getResoureByCatID(5));
         request.getRequestDispatcher(Constants.URL_HOME).forward(request, response);
     }
     /**
