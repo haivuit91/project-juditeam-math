@@ -18,7 +18,7 @@
         </style>
     </head>
     <body>
-        <form action="authen" name="login" method="post">
+        <form action="authen" name="login" method="post" style="margin-top: 50px">
             <div class="col-md-6">
                 <div class="panel panel-default">
                     <div class="panel-heading" style="text-align: center">
@@ -36,7 +36,7 @@
                         </div>    
                         <!--Mật khẩu-->
                         <div class="form-group">
-                            <div class="col-md-12" >
+                            <div class="col-md-12" style="margin-top: 5px" >
                                 <label>Mật khẩu(*)</label>
                             </div>
                             <div class="col-md-12" >
@@ -45,7 +45,7 @@
                         </div> 
                         <!--Nhập lại mật khẩu-->
                         <div class="form-group">
-                            <div class="col-md-12" >
+                            <div class="col-md-12" style="margin-top: 5px">
                                 <label>Nhập lại mật khẩu(*)</label>
                             </div>
                             <div class="col-md-12" >
@@ -54,7 +54,7 @@
                         </div> 
                         <!--Nhập lại mật khẩu-->
                         <div class="form-group">
-                            <div class="col-md-12" >
+                            <div class="col-md-12" style="margin-top: 5px">
                                 <label>Bạn là ai?(*)</label>
                             </div>
                             <div class="col-md-12" >
@@ -101,7 +101,7 @@
                         </div>    
                         <!--Mật khẩu-->
                         <div class="form-group">
-                            <div class="col-md-12" >
+                            <div class="col-md-12" style="margin-top: 5px">
                                 <label>Mật khẩu(*)</label>
                             </div>
                             <div class="col-md-12" >
