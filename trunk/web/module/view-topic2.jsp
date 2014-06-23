@@ -21,8 +21,8 @@
                         <div id="attach"><a href="${item.path}">${item.title}</a></div>
                     </c:forEach>
                     <div id="action">
-                        <label>Đăng bởi: ${current_post.user.userName}</label>
-                        <label>Ngày: ${current_post.datePost} </label>
+                        Người viết: <label style="font-weight: bold; margin-right: 20px">${current_post.user.userName}</label>
+                        Ngày: <label style="font-weight: bold"> ${current_post.datePost} </label>
                     </div>
                 </div>
                 <div id="wrapp-commet">
