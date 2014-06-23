@@ -62,7 +62,7 @@
                             <td class="date">${item.getCategory().categoryName}</td>
                             <td class="category">${item.datePost}</td>
                             <td class="action">
-                                <a  href="postmanage?action=del&id=${item.postID}">Xóa</a>
+                                <a  href="postmanage?action=del&id=${item.postID}"  onclick="return confirm('Bạn chắc chắn muốn xóa ${item.title}?')">Xóa</a>
                                 <a  href="postmanage?action=${item.isActive() ? "disable":"enable"}&id=${item.postID}">${item.isActive() ? "Ẩn":"Hiện"}</a>
                             </td>
                         </tr>
@@ -75,7 +75,7 @@
             <div class="col-md-12 alert alert-info" style="text-align: center; background:white; border: none" >
                 <c:forEach begin="1" end="${total_page}" var="i">
                     <c:if test="${current_page != i}">
-                        <a  class="label label-primary" href="postmanage?action=${key_search == null ? 'load':'search'}${key_search == null ? '':'&key-search='}${key_search}&page=${i}">${i}</a>
+                        <a  class="label label-primary" href="postmanage?action=${key_search == null ? 'load':'search'}${key_search == null ? '':'&key-search='}${key_search}&page=${i}" >${i}</a>
                     </c:if>
                     <c:if test="${current_page == i}">
                         <b class="label label-warning">${i}</b>
