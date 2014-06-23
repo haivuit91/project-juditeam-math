@@ -71,7 +71,7 @@
                     </div>   
                     <div class="form-group">
                         <div class="col-md-12" >
-                            <label>Danh mục</label>
+                            <label>Thuộc danh mục</label>
                         </div>
                         <div class="col-md-12">
                             <select  class="form-control" name="category-id">
