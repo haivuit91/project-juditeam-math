@@ -4,6 +4,7 @@
     Author     : Welcomes
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -18,55 +19,55 @@
         </div>
 
         <table class="col-md-8 col-md-offset-2 tab-pane">
-            <tr class="col-md-12 label-warning" style="border-bottom:#EDEDED solid thin;">
+            <tr class="col-md-12 alert-info " style="border-bottom:#EDEDED solid thin;">
                 <td class="col-md-3" style="border-right:  2px solid #EDEDED;min-width: 200px;font-size: 1.2em">
-                    <a href="#"> Bài tập</a>
+                    <label>Bài tập</label>
                 </td>
                 <td class="col-md-9" style="padding-top: 5px">
-                    <p><a href="#"> Các dạng bài tập thường gặp</a></p>   
-                    <p><a href="#"> Bài tập tích phân cơ bản</a></p>   
-                    <p><a href="#">Bài tập tích phân cơ bản</a></p>   
+                    <c:forEach items="${list_bt}" var="item">
+                        <p><a href="${item.link}">${item.title}</a></p>   
+                    </c:forEach>
                 </td>
             </tr>
 
             <tr class="col-md-12 alert-success" style="border-bottom:#EDEDED solid thin;">
                 <td class="col-md-3" style="border-right:  2px solid #EDEDED;min-width: 200px;font-size: 1.2em">
-                    <a href="#"> Lý thuyết</a>
+                     <label>Lý thuyết</label>
                 </td>
                 <td class="col-md-9">
-                    <p><a href="#"> Các dạng bài tập thường gặp</a></p>   
-                    <p><a href="#"> Bài tập tích phân cơ bản</a></p>   
-                    <p><a href="#">Bài tập tích phân cơ bản</a></p>   
+                     <c:forEach items="${list_lt}" var="item">
+                        <p><a href="${item.link}">${item.title}</a></p>   
+                    </c:forEach>
                 </td>
             </tr>
             <tr class="col-md-12 alert-info" style="border-bottom:#EDEDED solid thin;">
                 <td class="col-md-3" style="border-right:  2px solid #EDEDED;min-width: 200px;font-size: 1.2em">
-                    <a href="#">  Tài liệu</a>
+                     <label>Tài liệu</label>
                 </td>
                 <td class="col-md-9">
-                    <p><a href="#"> Các dạng bài tập thường gặp</a></p>   
-                    <p><a href="#"> Bài tập tích phân cơ bản</a></p>   
-                    <p><a href="#">Bài tập tích phân cơ bản</a></p>   
+                    <c:forEach items="${list_tl}" var="item">
+                        <p><a href="${item.link}">${item.title}</a></p>   
+                    </c:forEach>
                 </td>
             </tr>
             <tr class="col-md-12 alert-success" style="border-bottom:#EDEDED solid thin;">
                 <td class="col-md-3" style="border-right:  2px solid #EDEDED;min-width: 200px;font-size: 1.2em">
-                    <a href="#"> Hướng dẫn</a>
+                    <label>Hướng dẫn</label>
                 </td>
                 <td class="col-md-9">
-                    <p><a href="#"> Các dạng bài tập thường gặp</a></p>   
-                    <p><a href="#"> Bài tập tích phân cơ bản</a></p>   
-                    <p><a href="#">Bài tập tích phân cơ bản</a></p>   
+                     <c:forEach items="${list_hd}" var="item">
+                        <p><a href="${item.link}">${item.title}</a></p>   
+                    </c:forEach>
                 </td>
             </tr>
             <tr class="col-md-12 alert-info" style="border-bottom:#EDEDED solid thin;">
                 <td class="col-md-3" style="border-right:  2px solid #EDEDED;min-width: 200px;font-size: 1.2em">
-                    <a href="#"> Kinh nghiệm</a>
+                   <label>Kinh nghiệm</label>
                 </td>
                 <td class="col-md-9">
-                    <p><a href="#"> Các dạng bài tập thường gặp</a></p>   
-                    <p><a href="#"> Bài tập tích phân cơ bản</a></p>   
-                    <p><a href="#">Bài tập tích phân cơ bản</a></p>   
+                     <c:forEach items="${list_kn}" var="item">
+                        <p><a href="${item.link}">${item.title}</a></p>   
+                    </c:forEach> 
                 </td>
             </tr>
 

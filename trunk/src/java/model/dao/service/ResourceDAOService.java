@@ -14,5 +14,5 @@ import model.entities.Resource;
  * @author Tuanka
  */
 public interface ResourceDAOService {
-    List<Resource> getResoureByCatID();
+    List<Resource> getResoureByCatID(int id);
 }

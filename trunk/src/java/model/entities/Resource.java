@@ -13,17 +13,16 @@ package model.entities;
 public class Resource {
     private int resID;
     private String title;
-
-    public Resource(){
-        
-    }
-    public Resource(int resID, String title, CatResource catRes) {
+    private String link;
+    public  Resource(){}
+    public Resource(int resID, String title, String link, CatResource cat) {
         this.resID = resID;
         this.title = title;
-        this.catRes = catRes;
+        this.link = link;
+        this.cat = cat;
     }
     
-    private CatResource catRes;
+    private CatResource cat;
 
     public int getResID() {
         return resID;
@@ -41,11 +40,19 @@ public class Resource {
         this.title = title;
     }
 
-    public CatResource getCatRes() {
-        return catRes;
+    public String getLink() {
+        return link;
     }
 
-    public void setCatRes(CatResource catRes) {
-        this.catRes = catRes;
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public CatResource getCat() {
+        return cat;
+    }
+
+    public void setCat(CatResource cat) {
+        this.cat = cat;
     }
 }
