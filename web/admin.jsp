@@ -67,6 +67,10 @@ eated on : Jun 12, 2014, 7:14:09 AM
                 </c:if>
             </div>
         </div>
+        <div id="about">
+            <p>(c) 2014 Trần Thị Kim Hậu – Khoa học máy tính K25</p>
+            <p>Website thuộc đề tài bảo vệ luận văn thạc sĩ “Ứng dụng semantic web xây dựng hệ thống trợ giúp học tập cho học sinh THPT ôn thi tốt nghiệp môn toán”</p>
+        </div>
         <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.js" type="text/javascript"></script>
     </body>

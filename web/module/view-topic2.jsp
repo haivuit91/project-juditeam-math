@@ -8,11 +8,12 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <body>
+    <body style="background: #a09e9e">
         <div id ="view-wapper">
             <div id="content">
-                <div id="title">${current_post.title}</div>
+               
                 <div id="wrapp-post">
+                     <div id="title">${current_post.title}</div>
                     <div>
                         ${current_post.content}
                     </div>
@@ -35,7 +36,7 @@
                 <div id="dediter">
                     <form action="comment" method="post" accept-charset="UTF-8">
                         <input type="text" name="id" readonly value="${current_post.postID}" style="display: none"/>
-                        <textarea cols="122" rows="3" name="content" placeholder="Nhập thắc mắc của bạn"></textarea>
+                        <textarea cols="120" rows="3" name="content" placeholder="Nhập thắc mắc của bạn"></textarea>
                         <button type="submit" value="comment" name="action">Gửi</button>
                     </form>
                 </div>
