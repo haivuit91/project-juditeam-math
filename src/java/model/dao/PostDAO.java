@@ -201,7 +201,7 @@ public class PostDAO implements PostDAOService {
         List<Post> listPost = new ArrayList<>();
         try {
             Connection conn = ConnectionFactory.getConnection();
-            String sql = "select * from tbl_post where summary like '%" + key + "%' or title like '%" + key + "%' ";
+            String sql = "select * from tbl_post where (summary like '%" + key + "%' or title like '%" + key + "%') and isActive=1 ";
             Statement sm = conn.createStatement();
             ResultSet rs = sm.executeQuery(sql);
             System.out.println(sql);
