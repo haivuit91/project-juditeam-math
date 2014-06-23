@@ -14,6 +14,7 @@ import java.util.List;
 import model.dao.service.ResourceDAOService;
 import model.entities.CatResource;
 import model.entities.Resource;
+import util.Support;
 
 /**
  *
@@ -53,7 +54,9 @@ public class ResourceDAO implements ResourceDAOService {
         try {
             item.setResID(rs.getInt("resourceID"));
             item.setTitle(rs.getString("title"));
-            item.setLink(rs.getString("link"));
+            String link = rs.getString("link");
+            item.setLink(link);
+            item.setIcon(Support.getIcon(link));
             item.setCat(CatResourceDAO.getInstance().getCatByID(rs.getInt("catID")));
 
         } catch (SQLException ex) {

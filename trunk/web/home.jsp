@@ -65,13 +65,13 @@ eated on : Jun 12, 2014, 7:14:09 AM
         <c:if test="${p == 'search-cb'}">
             <%@include file="module/seach-cb.jsp" %>
             <div class="container">
-                <%@include file="module/result-search.jsp" %>
+                <%@include file="module/result-search2.jsp" %>
             </div>
         </c:if>
         <c:if test="${p == 'seach-nc'}">
             <%@include file="module/seach-nc.jsp" %>
             <div class="container">
-                <%@include file="module/result-search.jsp" %>
+                <%@include file="module/result-search2.jsp" %>
             </div>  
         </c:if>
         <c:if test="${p == 'view-post'}">
@@ -96,9 +96,14 @@ eated on : Jun 12, 2014, 7:14:09 AM
                     <%@include file="module/resurce.jsp" %>
                 </c:if>     
                 <c:if test="${p == 'login' || p == null}">
-                    <%@include file="module/result-search.jsp" %>
+                    <%@include file="module/result-search2.jsp" %>
                 </c:if>
             </div>
+        </div>
+        
+        <div id="about">
+            <p>(c) 2014 Trần Thị Kim Hậu – Khoa học máy tính K25</p>
+            <p>Website thuộc đề tài bảo vệ luận văn thạc sĩ “Ứng dụng semantic web xây dựng hệ thống trợ giúp học tập cho học sinh THPT ôn thi tốt nghiệp môn toán”</p>
         </div>
         <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.js" type="text/javascript"></script>

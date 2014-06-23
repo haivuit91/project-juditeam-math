@@ -73,14 +73,14 @@
             </c:if>
         </div>
         <!--paging default -->
-        <div class="col-md-12 alert alert-info" style="text-align: center; background:white; border: none">
+        <div>
             <c:if test="${action == 'load-default'}">
                 <c:forEach begin="1" end="${total_page}" var="i">
                     <c:if test="${current_page != i}">
-                        <a  class="label label-primary" href="index?page=${i}" >${i}</a>
+                        <a   href="index?page=${i}" >${i}</a>
                     </c:if>
                     <c:if test="${current_page == i}">
-                        <b class="label label-warning"> ${i}</b>
+                        <b > ${i}</b>
                     </c:if>
                 </c:forEach>
             </c:if>

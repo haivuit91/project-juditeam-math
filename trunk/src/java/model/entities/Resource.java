@@ -14,12 +14,21 @@ public class Resource {
     private int resID;
     private String title;
     private String link;
+    private String icon;
     public  Resource(){}
     public Resource(int resID, String title, String link, CatResource cat) {
         this.resID = resID;
         this.title = title;
         this.link = link;
         this.cat = cat;
+    }
+
+    public String getIcon() {
+        return icon;
+    }
+
+    public void setIcon(String icon) {
+        this.icon = icon;
     }
     
     private CatResource cat;

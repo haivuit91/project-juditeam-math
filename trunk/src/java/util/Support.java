@@ -40,5 +40,27 @@ public class Support {
              mystring = mystring + strValid.charAt(randnum);
         } 
         return mystring;
-    }    
+    }
+    public static String getIcon(String fileName){
+        String arr[] = fileName.split("\\.");
+        String type = arr[arr.length -1];
+        System.out.println(type);
+        switch (type) {
+            case "doc":
+            case "DOC":
+            case "docx":
+            case "DOCX":
+                return "image/icon/word-icon.png";
+            case "pdf":
+            case "PDF":
+                return "image/icon/pdf-icon.png";
+            case "xsl":
+            case "XSL":
+                return "image/icon/excel-icon.png";
+            case "zip":
+            case "rar":
+                return "image/icon/zip-icon.png";
+        }
+        return "image/icon/other-icon.png";
+    }
 }
