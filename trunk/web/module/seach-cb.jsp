@@ -28,7 +28,7 @@
                         </div>
                     </div>
                     <div class="col-md-1">
-                        <a href="/project2/index?p=seach-nc"  class="label" style="font-size:16">Tìm kiếm cơ bản </a>
+                        <a href="index?p=seach-nc"  class="label" style="font-size:16">Tìm kiếm cơ bản </a>
                     </div>
                 </div>
             </div>
