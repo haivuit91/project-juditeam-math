@@ -54,7 +54,7 @@ public class Support {
             case "pdf":
             case "PDF":
                 return "image/icon/pdf-icon.png";
-            case "xsl":
+            case "xlsx":
             case "XSL":
                 return "image/icon/excel-icon.png";
             case "zip":
