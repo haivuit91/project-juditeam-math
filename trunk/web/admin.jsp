@@ -39,13 +39,13 @@ eated on : Jun 12, 2014, 7:14:09 AM
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="/project2/index">Trang chủ</a></li>
+                        <li class="active"><a href="index">Trang chủ</a></li>
                         <li>
                             <c:if test="${current_user == null}">
-                                <a href="/project2/authen?action=login-logout">Đăng nhập|Đăng ký</a>
+                                <a href="authen?action=login-logout">Đăng nhập|Đăng ký</a>
                             </c:if>
                             <c:if test="${current_user != null}">
-                                <a href="/project2/authen?action=logout">Thoát</a>
+                                <a href="authen?action=logout">Thoát</a>
                             </c:if>
                         </li>
                     </ul>
