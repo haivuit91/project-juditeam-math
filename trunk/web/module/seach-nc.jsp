@@ -46,7 +46,7 @@
                     </div>
                     <!-- /input-group -->
                     <div class="col-md-1">
-                        <a href="/project2/index"  class="label label-success" style="font-size:16;padding:10px">Tìm kiếm nâng cao </a>
+                        <a href="index"  class="label label-success" style="font-size:16;padding:10px">Tìm kiếm nâng cao </a>
                     </div>
                 </div>
             </div>
