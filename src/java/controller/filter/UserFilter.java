@@ -109,7 +109,7 @@ public class UserFilter implements Filter {
         if (user != null && user.getRole().getRoleName().equals("Giáo viên")) {
             chain.doFilter(request, response);
         } else {
-            req.setAttribute(Constants.RESULT_LOGIN, "Bạn phải đăng nhập");
+            req.setAttribute(Constants.RESULT_LOGIN, "Bạn phải đăng nhập bằng tài khoản giáo viên");
             request.setAttribute(Constants.PAGE, "login-logout");
             RoleDAOService roleService = RoleDAO.getInstance();
             request.setAttribute(Constants.LIST_ROLE, roleService.getRoles());

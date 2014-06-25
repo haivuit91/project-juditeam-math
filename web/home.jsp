@@ -37,17 +37,19 @@ eated on : Jun 12, 2014, 7:14:09 AM
                             ÔN THI TỐT NGHIỆP
                         </b>
                     </a>
-
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="index">Trang chủ</a></li>
                             <c:if test="${current_user != null}">
                             <li><a href="resource?action=load">Tài nguyên</a></li>
-                            <li><a href="postmanage?action=load">Quản trị</a></li>
-                            <li><a href="post?action=new-topic">Tạo mới</a></li>
+                            <c:if test="${current_user.role.roleName =='Giáo viên'}">   
+                                <li><a href="postmanage?action=load">Quản trị</a></li>
+                                <li><a href="post?action=new-topic">Tạo mới</a></li>
                             </c:if>
-                            <c:if test="${current_user == null}">
+                            </c:if>
+
+                        <c:if test="${current_user == null}">
                             <li><a href="authen?action=login-logout">Đăng nhập|Đăng ký</a></li>
                             </c:if>
                             <c:if test="${current_user != null}">
@@ -100,7 +102,7 @@ eated on : Jun 12, 2014, 7:14:09 AM
                 </c:if>
             </div>
         </div>
-        
+
         <div id="about">
             <p>(c) 2014 Trần Thị Kim Hậu – Khoa học máy tính K25</p>
             <p>Website thuộc đề tài bảo vệ luận văn thạc sĩ “Ứng dụng semantic web xây dựng hệ thống trợ giúp học tập cho học sinh THPT ôn thi tốt nghiệp môn toán”</p>
