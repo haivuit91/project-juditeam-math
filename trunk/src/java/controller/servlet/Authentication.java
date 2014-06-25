@@ -140,10 +140,12 @@ public class Authentication extends HttpServlet {
                 requestLogin(request, response);
             } else {
                 if (!userService.insertUser(user)) {
-                    request.setAttribute(Constants.MSG_RESULT, "Đăng kí thất bại");
+                    request.setAttribute(Constants.RESULT_SIGNUP, "Đăng kí thất bại");
                     requestLogin(request, response);
                 } else {
-                    response.sendRedirect("index");
+                    request.setAttribute(Constants.RESULT_LOGIN, "Tài khoản của bạn đã được tạo ! Mời đăng nhập");
+                    requestLogin(request, response);
+                    //response.sendRedirect("index");
                 }
             }
         } catch (NumberFormatException e) {
